@@ -1,0 +1,144 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>StartupNodejs</Name>
+    <RootNamespace>StartupNodejs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f3cfb51f-743e-4d0b-9d26-7246f2c6b137</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>3000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\routing.js" />
+    <Compile Include="app\user\user.controller.js" />
+    <Compile Include="data\dbService.js" />
+    <Compile Include="data\userService\userDataService.js" />
+    <Compile Include="public\javascripts\demo.js" />
+    <Compile Include="server.js" />
+    <Compile Include="app\about\about.controller.js" />
+    <Compile Include="app\home\home.controller.js" />
+    <Compile Include="app\shared\navbar\nav.html" />
+    <Compile Include="app\shared\navbar\nav_directive.js" />
+    <Compile Include="gulpfile.js" />
+    <Compile Include="public\javascripts\angular-ui-router.min.js" />
+    <Compile Include="public\javascripts\angular.min.js" />
+    <Compile Include="public\javascripts\bootstrap-checkbox-radio.js" />
+    <Compile Include="public\javascripts\bootstrap-notify.js" />
+    <Compile Include="public\javascripts\bootstrap.min.js" />
+    <Compile Include="public\javascripts\chartist.min.js" />
+    <Compile Include="public\javascripts\jquery-1.10.2.js" />
+    <Compile Include="public\javascripts\jquery.min.js" />
+    <Compile Include="app\ngapp.js" />
+    <Compile Include="public\javascripts\paper-dashboard.js" />
+    <Content Include="app\about\about.html" />
+    <Content Include="app\shared\sidebar\menu.html" />
+    <Content Include="app\shared\sidebar\menu_directive.js" />
+    <Content Include="app\user\user.html" />
+    <Content Include="public\fonts\themify.eot" />
+    <Content Include="public\fonts\themify.svg" />
+    <Content Include="public\fonts\themify.ttf" />
+    <Content Include="public\fonts\themify.woff" />
+    <Content Include="public\img\ajax_small.gif" />
+    <Content Include="public\img\angularjs.png" />
+    <Content Include="public\img\apple-icon.png" />
+    <Content Include="public\img\background.jpg" />
+    <Content Include="public\img\express.png" />
+    <Content Include="public\img\faces\face-0.jpg" />
+    <Content Include="public\img\faces\face-1.jpg" />
+    <Content Include="public\img\faces\face-2.jpg" />
+    <Content Include="public\img\faces\face-3.jpg" />
+    <Content Include="public\img\favicon.png" />
+    <Content Include="public\img\logo_mssql.png" />
+    <Content Include="public\img\mongodb.png" />
+    <Content Include="public\img\new_logo.png" />
+    <Content Include="public\img\nodejs.png" />
+    <Content Include="public\img\tim_80x80.png" />
+    <Content Include="public\stylesheets\animate.min.css" />
+    <Content Include="public\stylesheets\bootstrap.min.css" />
+    <Content Include="layout.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="app\home\home.html" />
+    <Content Include="public\stylesheets\demo.css" />
+    <Content Include="public\stylesheets\paper-dashboard.css" />
+    <Content Include="public\stylesheets\themify-icons.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\about\" />
+    <Folder Include="app\user\" />
+    <Folder Include="app\shared\navbar\" />
+    <Folder Include="app\shared\" />
+    <Folder Include="app\shared\sidebar\" />
+    <Folder Include="data\" />
+    <Folder Include="data\userService\" />
+    <Folder Include="public\" />
+    <Folder Include="app\home\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\img\faces\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="app\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

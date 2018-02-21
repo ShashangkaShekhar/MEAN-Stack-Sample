@@ -1,0 +1,16 @@
+{
+  "name": "startup-nodejs",
+  "version": "0.0.0",
+  "description": "StartupNodejs",
+  "main": "server.js",
+  "author": {
+    "name": "Shashangka"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bower": "^1.8.2",
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "mssql": "^4.1.0"
+  }
+}

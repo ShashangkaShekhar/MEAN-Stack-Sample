@@ -1,0 +1,24 @@
+{
+  "name": "startupnode",
+  "description": "startup node",
+  "main": "appserver.js",
+  "authors": [
+    "shashangka"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "angularjs": "^1.6.9",
+    "angular-ui-router": "*",
+    "modernizer": "^2.8.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

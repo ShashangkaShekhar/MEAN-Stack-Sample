@@ -1,0 +1,8 @@
+D:\Article\Node\NodeJS3\StartupNodejsVS\StartupNodejs\obj\Debug\StartupNodejs.njsproj.CoreCompileInputs.cache
+D:\Article\Node\NodeJS3\StartupNodejsVS\StartupNodejs\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Article\Node\NodeJS3\StartupNodejsVS\StartupNodejs\obj\Debug\StartupNodejs.njsprojResolveAssemblyReference.cache
+D:\Article\Node\NodeJS3\StartupNodejs VS\StartupNodejs\obj\Debug\StartupNodejs.njsprojResolveAssemblyReference.cache
+D:\Article\Node\NodeJS3\StartupNodejs VS\StartupNodejs\obj\Debug\StartupNodejs.njsproj.CoreCompileInputs.cache
+D:\Article\Node\NodeJS3\StartupNodejs VS\StartupNodejs\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Article\Node\NodeJS4\StartupNodejs VS\StartupNodejs\obj\Debug\StartupNodejs.njsproj.CoreCompileInputs.cache
+D:\Article\Node\NodeJS4\StartupNodejs VS\StartupNodejs\bin\Microsoft.NodejsTools.WebRole.dll
